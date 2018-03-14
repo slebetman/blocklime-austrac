@@ -1,0 +1,19 @@
+{
+  "name": "austrac-blocklime",
+  "version": "1.0.0",
+  "description": "Austrac Codeathon code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slebetman/blocklime-austrac.git"
+  },
+  "author": "blocklime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slebetman/blocklime-austrac/issues"
+  },
+  "homepage": "https://github.com/slebetman/blocklime-austrac#readme"
+}
