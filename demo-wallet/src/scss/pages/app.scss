@@ -1,10 +1,10 @@
 .device {
   position: absolute;
   left: 50%;
-  top: 40%;
-  margin-left: -15.5rem;
+  top: 50%;
+  margin-left: -18.5rem;
   margin-top: -30rem;
-  width: 31rem;
+  width: 37rem;
   background: #ffffff;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   -webkit-box-shadow: -1px 24px 41px -6px rgba(0,0,0,0.27);
@@ -26,10 +26,10 @@
 }
 
 .mid-img{
-    height: 160px;
+    height: auto;
     margin-left: 40px;
     width: 400px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .mid-head{
@@ -43,8 +43,8 @@
 }
 
 img.main_pictures {
-  width: 30%;
-  margin-left: 50px;
+  width: 40%;
+  margin-left: 60px;
   &-dash{
     @extend img.main_pictures;
     margin-left: 0;
@@ -196,9 +196,10 @@ img.pictures {
   color: #384f61;
   font-size: 18px;
   text-align: center;
+  margin-top: 30px;
 }
 .mid p {
-  padding: 30px;
+  padding: 0; 
   text-align: center;
   font-size: 14px;
   color: #384f61;
@@ -223,7 +224,7 @@ img.pictures {
  bottom: 0;
 }
 .customNavigation div{
-  margin-top: 54px;
+  margin-top: 34px;
   background-color: #9fca3c;
   color: #ffffff;
   text-align: center;
@@ -352,7 +353,7 @@ margin: 10px 15px 0;
 }
 
 .history-wrapper.bc-spacer-t-m-40{
-  margin-top:40px;
+  margin-top:60px;
   label{}
 }
 
@@ -366,9 +367,9 @@ margin: 10px 15px 0;
 
 
 .mid-head.history-wrapper.bc-spacer-t-m-40.transaction-blocked{
-  margin-left: 60px;
+  margin-left: 90px;
 }
 
-.bc-spacer-b-m-170{
-  margin-bottom: 170px;
+.bc-spacer-b-m-140{
+  margin-bottom: 150px;
 }
