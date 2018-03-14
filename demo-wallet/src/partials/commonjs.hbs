@@ -1,0 +1,20 @@
+<script src='js/libs/jquery.min.js'></script>
+<script src='js/libs/owl.carousel.min.js'></script>
+    <script>
+        $(document).ready(function() {
+
+      var owl = $("owl-demo");
+
+      $("#owl-demo").owlCarousel({
+
+          navigation : false, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem: true
+
+      });
+      $(".next").click(function(){
+        $("#owl-demo").trigger("owl.next");
+      })
+    });
+    </script>
