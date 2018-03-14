@@ -1,9 +1,9 @@
 .device {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   margin-left: -15.5rem;
-  margin-top: -25rem;
+  margin-top: -30rem;
   width: 31rem;
   background: #ffffff;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -15,7 +15,7 @@
 /* start section css */
 
  /* first div */
-.planet {
+.lime-logo {
   margin: 40px 40px 0 40px;
   position: relative;
   width: 400px;
@@ -26,15 +26,51 @@
 }
 
 .mid-img{
-    height: 150px;
+    height: 160px;
     margin-left: 40px;
     width: 400px;
     margin-bottom: 50px;
 }
 
+.mid-head{
+  margin-top: 60px;
+      h1{
+        text-align: center;
+        color: #384f61;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
 img.main_pictures {
-  width: 40%;
-  margin-left: 30px;
+  width: 30%;
+  margin-left: 50px;
+  &-dash{
+    @extend img.main_pictures;
+    margin-left: 0;
+    position: absolute;
+    right: 16px;
+    top: 65px;
+  }
+}
+
+.top-header{
+  background: #9fca3c;
+  padding: 20px;
+  font-size: 16px;
+  .fa{
+    font-size: 22px;
+  }
+  &-blue{
+    background: #14243b;
+    padding: 20px;
+    font-size: 16px;
+    @extend .top-header;
+  }
+  span{
+    margin-left: 20px;
+      text-align: center;
+  }
 }
 
 /* second div */
@@ -157,7 +193,7 @@ img.pictures {
 }
 .mid h1 {
   text-align: center;
-  color: #10638e;
+  color: #384f61;
   font-size: 18px;
   text-align: center;
 }
@@ -165,7 +201,8 @@ img.pictures {
   padding: 30px;
   text-align: center;
   font-size: 14px;
-  color: #c9c9c9;
+  color: #384f61;
+  font-weight: bold;
 }
 .paper_img {
   z-index: 1;
@@ -183,18 +220,155 @@ img.pictures {
 /* BTM */
 .btm {
  position: relative;
- height: 10rem;
+ bottom: 0;
 }
-button {
-  margin-top: 44px;
-  background-color: #2196d4;
+.customNavigation div{
+  margin-top: 54px;
+  background-color: #9fca3c;
   color: #ffffff;
   text-align: center;
   width: 100%;
   border: none;
   height: auto;
   box-sizing: border-box;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 13px 0;
+  font-size: 15px;
+}
+
+
+.owl-theme .owl-controls .owl-page span{
+  margin: 0 2px;
+      width: 8px;
+    height: 8px;
+}
+
+.lime-button{
+  @extend .lime-logo;
+  margin-left: 25px;
+  button{
+    border-width: 0;
+    padding: 20px 30px;
+    font-size: 14px;
+    &.left-btn{
+      background: #89919e;
+    }
+     &.right-btn{
+      background: #14243b;
+    }
+  }
+}
+
+.bc-load{
+  h1{
+    text-align: center;
+    color: #394f61;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p{
+       text-align: center;
+    color: #394f61;
+    font-size: 16px;
+  }
+}
+
+.nav-hidden{
+  .owl-controls{
+    display: none;
+  }
+}
+
+.nav-show{
+  .owl-controls{
+    display: block;
+  }
+}
+
+.log-out-icon, .log-in-icon{
+  width: 30px;
+}
+
+
+.bc-content-spacer{
+  height: 220px;
+  padding: 20px 40px 20px 30px;
+  font-size: 16px;
+  ul{
+    li{
+      padding-right:50px;
+    }
+  }
+}
+.bg-primary-color{
+  background: #9fca3c;
+}
+
+img.main_pictures-das.log-in-icon{
+    top: -47px;
+    right: 40px;
+    position: absolute;
+}
+
+.history-wrapper{
+margin: 10px 15px 0;
+  h1{
+  text-align: left;
+  color: #384f61;
   font-size: 18px;
+  }
+  .history-stack{
+      background: #f6f6f6;
+      display: inline-block;
+  padding: 20px 0 20px 5px;
+  border-radius: 5px;
+  img{
+    width: 20%;
+  }
+  .normal-text{
+    font-size: 16px;
+    color: #384f61;
+  }
+  .stack-content {
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+  .amount{
+    position: absolute;
+    right: 8px;
+    top: 30px;
+    font-size: 13px;
+      color: #384f61;
+
+  }
+  .color-gray{
+    font-size: 12px;
+    color: #a4aeb7; 
+  }
+}
+&.transaction-blocked{
+  text-align: center;
+}
+}
+
+.history-wrapper.bc-spacer-t-m-40{
+  margin-top:40px;
+  label{}
+}
+
+
+.qr{
+  h4{
+    color: #384f61;
+    font-style: italic;
+  }
+}
+
+
+.mid-head.history-wrapper.bc-spacer-t-m-40.transaction-blocked{
+  margin-left: 60px;
+}
+
+.bc-spacer-b-m-170{
+  margin-bottom: 170px;
 }

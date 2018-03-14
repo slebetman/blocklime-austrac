@@ -3,18 +3,57 @@
     <script>
         $(document).ready(function() {
 
-      var owl = $("owl-demo");
+          var owl = $("owl-demo");
 
-      $("#owl-demo").owlCarousel({
+          $("#owl-demo").owlCarousel({
 
-          navigation : false, // Show next and prev buttons
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem: true
+              navigation : false, // Show next and prev buttons
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem: true,
+              afterAction: function(el){
+             //remove class active
+             this
+             .$owlItems
+             .removeClass('active')
 
-      });
-      $(".next").click(function(){
-        $("#owl-demo").trigger("owl.next");
-      })
+             //add class active
+             this
+             .$owlItems //owl internal $ object containing items
+             .eq(this.currentItem)
+             .addClass('active')   
+
+             if($(".owl-wrapper div:nth-child(4), .owl-wrapper div:nth-child(5), .owl-wrapper div:nth-child(6), .owl-wrapper div:nth-child(7), .owl-wrapper div:nth-child(8), .owl-wrapper div:nth-child(9), .owl-wrapper div:nth-child(10), .owl-wrapper div:nth-child(11), .owl-wrapper div:nth-child(12), .owl-wrapper div:nth-child(13)").hasClass('active')){
+                $('.owl-carousel').addClass('nav-hidden');
+                $('.owl-carousel').removeClass('nav-show');
+                $('.customNavigation').addClass('hidden-lg');
+             }else{
+               $('.owl-carousel').addClass('nav-show');
+               $('.owl-carousel').removeClass('nav-hidden');
+               $('.owl-pagination div:nth-child(4), .owl-pagination div:nth-child(5), .owl-pagination div:nth-child(6), .owl-pagination div:nth-child(7), .owl-pagination div:nth-child(8), .owl-pagination div:nth-child(9), .owl-pagination div:nth-child(10), .owl-pagination div:nth-child(11), .owl-pagination div:nth-child(12), .owl-pagination div:nth-child(13)').addClass('hidden-lg');
+                $('.customNavigation').removeClass('hidden-lg');
+             }
+
+              } 
+          });
+          $(".next").click(function(){
+            $("#owl-demo").trigger("owl.next");
+          })
+
+          // var activeCheck = 
+
+          // $(".owl-wrapper div:nth-child(4)").addClass('testingo');
+
+          $(".mat-input").focus(function(){
+  $(this).parent().addClass("is-active is-completed");
+});
+
+$(".mat-input").focusout(function(){
+  if($(this).val() === "")
+    $(this).parent().removeClass("is-completed");
+  $(this).parent().removeClass("is-active");
+})
+
     });
+
     </script>
