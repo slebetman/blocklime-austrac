@@ -1,3 +1,14 @@
+<style>
+a.who {
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 4px;
+	background-color: #9c3;
+	color: #fff;
+}
+</style>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <div class="container" style="padding-top: 50px;">
 
     <h1>Transaction
@@ -12,14 +23,14 @@
             </tr>
             <tr>
                 <td width="500px" class="">
-                    <a href="./#/address/{{from}}">{{from}}</a> <a class="who">?</a>
+                    <a href="./#/address/{{from}}">{{from}}</a> <a class="who">unmask</a>
                     <br>
                 </td>
                 <td width="48px" class="" style="padding:4px;text-align:center;vertical-align:middle;">
                     <img src="https://blockchain.info/Resources/arrow_right_green.png">  <!--TODO upload the image on the server-->
                 </td>
                 <td class="">
-                    <a href="./#/address/{{to}}">{{to}}</a> <a class="who">?</a>
+                    <a href="./#/address/{{to}}">{{to}}</a> <a class="who">unmask</a>
                     <span class="pull-right">
                         <span>{{ethValue}} ETH</span>
                     </span>

@@ -1,5 +1,12 @@
 'use strict';
 
+setTimeout(function(){
+	$('a.who').on('click',function(){
+		$(this).css('background-color','grey');
+	});
+	
+},1500);
+
 angular.module('ethExplorer', ['ngRoute','ui.bootstrap'])
 
 .config(['$routeProvider',
