@@ -30,6 +30,12 @@
     margin-left: 40px;
     width: 400px;
     margin-bottom: 20px;
+    img{
+      cursor: pointer;
+    }
+    &.qr{
+      margin-bottom: 70px;
+    }
 }
 
 .mid-head{
@@ -51,6 +57,7 @@ img.main_pictures {
     position: absolute;
     right: 16px;
     top: 65px;
+    width: 30%;
   }
 }
 
@@ -60,6 +67,7 @@ img.main_pictures {
   font-size: 16px;
   .fa{
     font-size: 22px;
+    cursor: pointer;
   }
   &-blue{
     background: #14243b;
@@ -191,7 +199,7 @@ img.pictures {
   height: 9rem;
   display: inline-block;
 }
-.mid h1 {
+.mid h1, .fund {
   text-align: center;
   color: #384f61;
   font-size: 18px;
@@ -218,12 +226,25 @@ img.pictures {
   100% { left: 64px; right: 0; }
 }
 
+.history-wrapper.receiv{
+  margin-top: 80px;
+  margin-left: 110px;
+}
+
+.history-wrapper.block{
+  margin-top: 80px !important;
+  margin-left: 110px;
+}
+
 /* BTM */
 .btm {
  position: relative;
  bottom: 0;
 }
-.customNavigation div{
+.footer-btn {
+  &:hover{
+    cursor: pointer;
+  }
   margin-top: 34px;
   background-color: #9fca3c;
   color: #ffffff;
@@ -234,6 +255,30 @@ img.pictures {
   box-sizing: border-box;
   padding: 13px 0;
   font-size: 15px;
+  position: absolute;
+  bottom: -220px;
+  &.user{
+    bottom: -246px;
+  }
+  &.send{
+    bottom: -164px;
+    &.block{
+       bottom: -220px;
+    }
+  }
+   &.qr{
+    bottom: 0;
+  }
+}
+
+.nav-show .owl-controls{
+  position: absolute;
+  bottom: 90px;
+  left: 45%;
+}
+
+.hidden-mod{
+  display: none;
 }
 
 
@@ -245,7 +290,7 @@ img.pictures {
 
 .lime-button{
   @extend .lime-logo;
-  margin-left: 25px;
+  margin-left: 50px;
   button{
     border-width: 0;
     padding: 20px 30px;
@@ -287,6 +332,7 @@ img.pictures {
 
 .log-out-icon, .log-in-icon{
   width: 30px;
+  cursor: pointer;
 }
 
 
@@ -372,4 +418,10 @@ margin: 10px 15px 0;
 
 .bc-spacer-b-m-140{
   margin-bottom: 150px;
+}
+
+.lime-logo{
+  .fund{
+    margin-left:-130px;
+  }
 }
